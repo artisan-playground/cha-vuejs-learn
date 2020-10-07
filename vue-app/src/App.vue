@@ -21,10 +21,10 @@ export default {
     getAPIVersion() {
       axios
         .get('/api/version')
-        .then((response) => {
+        .then(response => {
           console.log(`version=${response.data}`)
         })
-        .catch((error) => {
+        .catch(error => {
           console.error('error:', error.status, error)
         })
     },
@@ -40,6 +40,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  background-color: midnightblue;
+  background-image: url(https://i.pinimg.com/originals/a6/c2/bc/a6c2bc2f2fbe49640daf596b9548c97b.jpg);
 }
 </style>
