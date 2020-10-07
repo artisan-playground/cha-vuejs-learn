@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Chacha World" />
+    <HelloWorld msg="Welcome to Artisan Cinema" />
   </div>
 </template>
 
@@ -40,5 +40,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: darkblue;
 }
 </style>
