@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld msg="Welcome to Chacha World" />
   </div>
 </template>
 
@@ -21,10 +21,10 @@ export default {
     getAPIVersion() {
       axios
         .get('/api/version')
-        .then(response => {
+        .then((response) => {
           console.log(`version=${response.data}`)
         })
-        .catch(error => {
+        .catch((error) => {
           console.error('error:', error.status, error)
         })
     },
