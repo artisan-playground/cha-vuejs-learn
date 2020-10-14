@@ -1,7 +1,10 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <router-link to="/bar">Go to BAR</router-link>
+    <router-link to="/profile">Go to Profile</router-link>
+    <p><router-link to="/education">Go to Education</router-link></p>
+    <p><router-link to="/activity">Go to Activity</router-link></p>
+
     <br />
   </div>
 </template>
@@ -29,6 +32,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #4272b9;
 }
 </style>
