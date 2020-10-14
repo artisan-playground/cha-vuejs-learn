@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without
+        JavaScript enabled. Please enable it to continue.</strong
+      >
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <template id="home-route">
+    <div class="markdown-content" v-html="contents"></div>
+  </template>
+  <script>
+    App.registerRoute('home', '/', {
+      data() {
+        return { contents: 'Loading information...' }
+      },
+      async mounted() {
+        try {
+          const response = await fetch('https://api.github.com/repos/dtinth/vuetoy/readme', {
+            headers: { Accept: 'application/vnd.github.v3.html' },
+          })
+          const responseText = await response.text()
+          this.contents = 'About this project:' + responseText
+        } catch (e) {
+          this.contents = 'Failed to load project information (check console log)'
+          console.error(e)
+        }
+      },
+    })
+  </script>
+  <style>
+    /* GitHub’s README API renders header with `a.anchor` link.
+     * It does not work with Vue Router and so is hidden.
+     * This is just to show the functionality of vuetoy; feel free to remove it when you implement your app. */
+    .markdown-content a.anchor {
+      display: none;
+    }
+  </style>
 </html>
