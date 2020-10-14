@@ -1,9 +1,8 @@
 <template>
   <div>
     <h1>
-      <strong>How to use this?</strong>
+      <strong>PROFILE</strong>
       <p>
-        <code>index.html</code>
       </p>
     </h1>
   </div>

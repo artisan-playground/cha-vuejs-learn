@@ -1,10 +1,7 @@
 <template>
   <div>
     <h1>
-      <strong>How to use this?</strong>
-      <p>
-        <code>index.html</code>
-      </p>
+      <strong>EDUCATION</strong>
     </h1>
   </div>
 </template>
