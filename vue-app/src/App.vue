@@ -40,6 +40,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  background-image: url(https://i.pinimg.com/originals/a6/c2/bc/a6c2bc2f2fbe49640daf596b9548c97b.jpg);
 }
 </style>
