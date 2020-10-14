@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="./assets/cha.jpg" />
     <HelloWorld msg="Welcome to Portfolio Of Chacha" />
     <router-view />
+
   </div>
 </template>
 
