@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <router-link to="/bar">Go to BAR</router-link>
+    <br />
   </div>
 </template>
 
@@ -29,5 +31,4 @@ li {
 a {
   color: #42b983;
 }
-
 </style>
