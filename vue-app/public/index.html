@@ -17,34 +17,4 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
-  <template id="home-route">
-    <div class="markdown-content" v-html="contents"></div>
-  </template>
-  <script>
-    App.registerRoute('home', '/', {
-      data() {
-        return { contents: 'Loading information...' }
-      },
-      async mounted() {
-        try {
-          const response = await fetch('https://api.github.com/repos/dtinth/vuetoy/readme', {
-            headers: { Accept: 'application/vnd.github.v3.html' },
-          })
-          const responseText = await response.text()
-          this.contents = 'About this project:' + responseText
-        } catch (e) {
-          this.contents = 'Failed to load project information (check console log)'
-          console.error(e)
-        }
-      },
-    })
-  </script>
-  <style>
-    /* GitHub’s README API renders header with `a.anchor` link.
-     * It does not work with Vue Router and so is hidden.
-     * This is just to show the functionality of vuetoy; feel free to remove it when you implement your app. */
-    .markdown-content a.anchor {
-      display: none;
-    }
-  </style>
 </html>
