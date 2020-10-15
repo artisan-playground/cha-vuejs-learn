@@ -1,6 +1,13 @@
 <template>
   <div id="app">
-    <header>PORTFOLIO</header>
+    <header>
+      PORTFOLIO
+      <ul>
+        <li><router-link to="/profile">Go to Profile</router-link></li>
+        <li><router-link to="/education">Go to Education</router-link></li>
+        <li><router-link to="/activity">Go to Activity</router-link></li>
+      </ul>
+    </header>
     <img alt="Vue logo" src="./assets/cha.jpg" />
     <HelloWorld msg="Welcome to Portfolio Of Chacha" />
     <router-view />
@@ -50,9 +57,11 @@ header {
   border-radius: 10px;
   background-color: indianred;
   color: white;
-  text-align: center;
+  text-align: left;
   width: 100%;
+  padding: 1rem;
   max-width: 100rem;
+  font-size: larger;
 }
 footer {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
@@ -62,6 +71,12 @@ footer {
   color: white;
   text-align: center;
   width: 100%;
+  padding: 1rem;
   max-width: 100rem;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  text-indent: 4rem;
 }
 </style>

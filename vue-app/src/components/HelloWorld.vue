@@ -1,13 +1,7 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <button><router-link to="/profile">Go to Profile</router-link></button>
-    <p>
-      <button><router-link to="/education">Go to Education</router-link></button>
-    </p>
-    <p>
-      <button><router-link to="/activity">Go to Activity</router-link></button>
-    </p>
+  <h1>{{ msg }}</h1>
+
   </div>
 </template>
 
