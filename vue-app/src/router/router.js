@@ -3,8 +3,8 @@ import VueRouter from 'vue-router'
 import profile from '../page/profile.vue'
 import education from '../page/education.vue'
 import activity from '../page/activity.vue'
-import header from '../page/header.vue'
-import footer from '../page/footer.vue'
+import header from '../components/header.vue'
+import footer from '../components/footer.vue'
 
 Vue.use(VueRouter)
 
