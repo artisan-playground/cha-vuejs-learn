@@ -1,8 +1,10 @@
 <template>
   <div>
-    <h1>
+    <h5>
       <strong>EDUCATION</strong>
-    </h1>
+    </h5>
+         <img alt="activity" src="../assets/a5.jpg"  /> 
+
   </div>
 </template>
 
@@ -12,4 +14,13 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+h5{
+text-align: center;
+font-size:30px;
+display:block;
+width:auto;
+background-color:white;
+word-wrap:break-word;}
+
+</style>

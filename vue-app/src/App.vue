@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <h1><strong>PORTFOLIO</strong></h1>
+      <h1><strong>PORTFOLIO</strong></h1 >
       <ul>
         <li class="link"><router-link class="link" to="/profile">Go to Profile</router-link></li>
         <li class="link">
@@ -78,6 +78,7 @@ footer {
   width: 100%;
   padding: 1rem;
   max-width: 200rem;  
+  font-size: large;
 }
 ul {
   display: flex;

@@ -31,6 +31,8 @@ width:20pc;
 background-color:white;
 word-wrap:break-word;
 text-align:center;
+font-size:30px;
+
 
 }
 h1{
