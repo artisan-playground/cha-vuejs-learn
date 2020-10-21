@@ -1,19 +1,15 @@
 <template>
   <div id="app">
     <header>
-      <strong>PORTFOLIO</strong>
+      <h1><strong>PORTFOLIO</strong></h1>
       <ul>
         <li class="link"><router-link class="link" to="/profile">Go to Profile</router-link></li>
-        <a href="/vue-app/src/page/education.vue"
-          ><li class="link">
+        <li class="link">
             <router-link class="link" to="/education">Go to Education</router-link>
-          </li></a
-        >
-        <a href="/vue-app/src/page/activity.vue"
-          ><li class="link">
-            <router-link class="link" to="/activity">Go to Activity</router-link>
-          </li></a
-        >
+          </li>
+          <li class="link">
+            <router-link class="link" to="/activity">Go to Activity </router-link>
+          </li>
       </ul>
     </header>
     <router-view />
@@ -47,26 +43,30 @@ export default {
 <style>
 .link {
   color: white;
+  
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color:black;
   margin-top: 60px;
+  background-image: url(https://i.pinimg.com/originals/a6/c2/bc/a6c2bc2f2fbe49640daf596b9548c97b.jpg);
+
 }
 header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  margin: 5rem auto;
   border-radius: 10px;
   background-color: indianred;
-  color: white;
+  color:white;
   text-align: inherit;
   width: 100%;
   padding: 2px;
-  max-width: 100rem;
+  max-width: 200rem;
   font-size: larger;
+  margin:0 0 30px 0;
+
 }
 footer {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
@@ -77,12 +77,15 @@ footer {
   text-align: center;
   width: 100%;
   padding: 1rem;
-  max-width: 100rem;
+  max-width: 200rem;  
 }
 ul {
   display: flex;
   justify-content: center;
   text-indent: 4rem;
   color: white;
+}
+h1{
+  color:white;
 }
 </style>

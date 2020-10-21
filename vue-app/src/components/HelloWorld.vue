@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <img alt="Vue logo" src="../assets/cha.jpg" />
+    
   </div>
   
 </template>
